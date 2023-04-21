@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.mbutcher.dev/" />
+    <meta property="og:title" content="Matt Butcher | Portfolio" />
+    <meta property="og:description" content="Portfolio website for Matthew Butcher, a software engineer from London" />
+    <meta
+      name="description"
+      content="A portfolio project by Matthew Butcher, OpenSpace is a project to collate fun and useful information about space with a modern design"
+    />
+
+    <link rel="stylesheet" href="/norm.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>Matthew Butcher | Portfolio</title>
+  </head>
+
+  <body>
+    <nav class="overlay">
+      <div class="nav-left">
+        <a href="/"><h1>Matthew Butcher</h1></a>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li><a href="/">About Me</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hero section, description of the site. -->
+    <section class="hero overlay-content">
+      <div class="button-container">
+        <button class="btn" onclick="changeContent('frontEnd')">Website Dev</button>
+        <button class="btn" onclick="changeContent('python')">Python</button>
+        <button class="btn" onclick="changeContent('university')">University</button>
+      </div>
+      <hr class="wide" />
+      <div class="card-container" id="content">
+        <!-- Content will be loaded here -->
+        <p>Please select which type of projects you'd like to see</p>
+      </div>
+    </section>
+    <footer class="overlay-bottom">
+      Matthew Butcher | A Portfolio Creation | &copy 2023<br />
+      <hr />
+      <a href="https://github.com/mbutcherdev/" target="_blank" rel="noopener noreferrer"
+        >Even more projects | <img class="footerimg" src="/src/backgrounds/github-mark-white.svg"
+      /></a>
+    </footer>
+    <script src="/projects/scripts.js"></script>
+  </body>
+</html>
